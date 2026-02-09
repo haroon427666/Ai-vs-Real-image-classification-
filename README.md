@@ -1,99 +1,127 @@
-AI vs Real Image Classifier (ConvNeXt-Tiny)
+# 🧠 AI vs Real Image Classifier — ConvNeXt-Tiny
 
-Deep learning model to detect AI-generated vs real images using ConvNeXt-Tiny architecture.
+A high-performance deep learning system for detecting AI-generated images vs real photographs using the ConvNeXt-Tiny architecture.
 
-Project Overview
+---
 
-This project builds a high-performance computer vision model to distinguish AI-generated images from real photographs.
+## 🚀 Project Overview
 
-Key highlights:
+This project builds a robust computer vision model capable of distinguishing synthetic (AI-generated) images from real-world photographs with high accuracy.
 
-Trained on 200K images
+It is designed for real-world deployment in areas such as deepfake detection, media verification, and AI-content moderation.
 
-Balanced dataset (Real vs AI)
+**Key Highlights**
 
-Modern architecture (ConvNeXt)
+* Trained on **200,000 images**
+* Fully **balanced dataset** (100K real / 100K AI)
+* Modern architecture: **ConvNeXt-Tiny**
+* Strong generalization capability
+* Optimized for **low-VRAM GPUs (4GB)**
+* Real-world deepfake & synthetic media detection use cases
 
-Strong generalization performance
+---
 
-Real-world deepfake detection use case
+## 🏗️ Model Details
 
-Model Details
+| Feature                  | Value                                     |
+| ------------------------ | ----------------------------------------- |
+| Architecture             | ConvNeXt-Tiny                             |
+| Task                     | AI-generated vs Real image classification |
+| Training epochs          | 30                                        |
+| Best validation accuracy | **93.4%**                                 |
+| Best AUC score           | **0.981**                                 |
+| Training accuracy        | ~96%                                      |
+| GPU used                 | RTX A1000 (4GB VRAM)                      |
+| Framework                | PyTorch                                   |
 
-Architecture: ConvNeXt-Tiny
+---
 
-Task: AI-generated vs Real image classification
+## 📊 Dataset
 
-Training epochs: 30
+**ArtiFact: Real and Fake Image Dataset**
+[https://www.kaggle.com/datasets/awsaf49/artifact-dataset](https://www.kaggle.com/datasets/awsaf49/artifact-dataset)
 
-Best validation accuracy: 93.4%
+**Dataset Composition**
 
-Best AUC score: 0.981
+* Total images: **200,000**
+* Real images: **100,000**
+* AI-generated images: **100,000**
+* Balanced binary classification
 
-Training accuracy: ~96%
+The dataset contains synthetic images generated from modern generative models along with real-world photographs, making it ideal for:
 
-GPU used: RTX A1000 (4GB VRAM)
+* Deepfake detection
+* AI content recognition
+* Authenticity verification systems
 
-Dataset
+---
 
-ArtiFact: Real and Fake Image Dataset
-https://www.kaggle.com/datasets/awsaf49/artifact-dataset
+## 🧩 Model Weights
 
-Dataset composition:
-
-Total images: 200,000
-
-Real images: 100,000
-
-AI-generated images: 100,000
-
-Balanced binary classification dataset
-
-The dataset includes synthetic images generated from modern generative models and real-world photographs, making it suitable for training deepfake and AI-content detection systems.
-
-Model Weights
-
-Due to GitHub size limits, model weights are hosted externally:
+Due to GitHub file size limits, trained weights are hosted externally.
 
 See:
 
+```
 model_link.txt
+```
 
-Installation
+---
+
+## ⚙️ Installation
+
+```bash
 pip install -r requirements.txt
+```
 
-Training
+---
 
-Open notebook:
+## 🏋️ Training
 
+Open the training notebook:
+
+```
 train_convnext.ipynb
+```
 
+Run all cells to reproduce the training pipeline.
 
-Run all cells to reproduce training.
+---
 
-Use Cases
+## 🎯 Use Cases
 
-Deepfake detection
+* Deepfake detection
+* AI-generated image identification
+* Content moderation systems
+* Media authenticity verification
+* Digital forensics pipelines
 
-Synthetic image detection
+---
 
-AI content moderation
+## 🧪 Tech Stack
 
-Media authenticity verification
+* Python
+* PyTorch
+* Torchvision
+* ConvNeXt Architecture
+* CUDA
+* NumPy / PIL / Sklearn
 
-Tech Stack
+---
 
-Python
+## 👨‍💻 Author
 
-PyTorch
+**Haroon — AI/ML Engineer**
 
-ConvNeXt
+Focused on:
 
-Torchvision
+* Computer Vision
+* Deep Learning
+* Generative AI Detection
+* Applied AI Systems
 
-CUDA
+---
 
-Author
+## ⭐ Project Goal
 
-Haroon — AI/ML Engineer
-Focused on computer vision, deep learning, and generative AI detection.
+To build a reliable, scalable, and deployment-ready system capable of detecting AI-generated media in real-world environments.
